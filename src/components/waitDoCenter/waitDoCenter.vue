@@ -3,13 +3,13 @@
     <div class="breadnav">
       <Breadcrumb>
         <BreadcrumbItem to="/">首页</BreadcrumbItem>
-        <BreadcrumbItem>新闻中心</BreadcrumbItem>
+        <BreadcrumbItem>待办中心</BreadcrumbItem>
       </Breadcrumb>
     </div>
     <div class="pd20">
       <div class="searchBox">
         <Row :gutter="16">
-          <Col span="16">新闻标题：<Input v-model="searchData.newsTitle" placeholder="XXX" clearable style="width: 80%;"/></Col>
+          <Col span="16">待办标题：<Input v-model="searchData.waitDoTitle" placeholder="XXX" clearable style="width: 80%;"/></Col>
           <Col span="8">发&nbsp;起&nbsp;&nbsp;人：<Input v-model="searchData.originator" placeholder="XXX" clearable style="width: 60%"/></Col>
         </Row>
         <br>
@@ -18,15 +18,22 @@
             发起时间：<DatePicker v-model="searchData.originatorTime" type="date" placeholder="选择时间" style="width: 60%"></DatePicker>
           </Col>
           <Col span="8">
-            所在部门：<Input v-model="searchData.department" placeholder="XXX" clearable style="width: 60%"/>
+            待办类型：<Select v-model="searchData.waitDoType" style="width:60%" clearable>
+              <Option v-for="item in waitDoTypeList" :value="item.value" :key="item.value">{{ item.label }}</Option>
+            </Select>
           </Col>
           <Col span="8">
-          所在公司：<Input v-model="searchData.company" placeholder="XXX" clearable style="width: 60%"/>
+          所在部门：<Input v-model="searchData.department" placeholder="XXX" clearable style="width: 60%"/>
           </Col>
         </Row>
         <br>
-        <Row>
-          <Col span="2" offset="20"><Button size="large" type="error" icon="ios-search" style="width: 105px;">搜索</Button></Col>
+        <Row :gutter="16">
+          <Col span="8">数据来源：<Select v-model="searchData.dataSources" style="width:60%" clearable>
+              <Option v-for="item in dataSourcesList" :value="item.value" :key="item.value">{{ item.label }}</Option>
+            </Select>
+          </Col>
+          <Col span="8">所在公司：<Input v-model="searchData.company" placeholder="XXX" clearable style="width: 60%"/></Col>
+          <Col span="2" offset="4"><Button size="large" type="error" icon="ios-search" style="width: 90px;">搜索</Button></Col>
         </Row>
       </div>
       <div class="tableData">
@@ -47,20 +54,24 @@ export default {
   data(){
     return {
       fullHeight: document.documentElement.clientHeight-236,
-      searchData:{newsTitle:"",originator:"",originatorTime:"",department:"",company:""},
+      searchData:{waitDoTitle:"",originator:"",originatorTime:"",department:"",waitDoType:"",dataSources:"",company:""},
+      waitDoTypeList:[],//消息类型数据
+      dataSourcesList:[],//数据来源数据
       theadData:[ //表头
         {title:'发布时间',key:'originatorTime'},
-        {title:'标题',key:'newsTitle',className: 'overEllipsis',width:350,
+        {title:'标题',key:'newsTitle',className: 'overEllipsis',width:300,
           render: (h, params) => {
             return h('a', {
               attrs:{
                 href:this.tbodyData[params.index].href,
-                title:this.tbodyData[params.index].newsTitle,
+                title:this.tbodyData[params.index].msgTitle,
                 target:"_blank"
               }
-            },this.tbodyData[params.index].newsTitle);
+            },this.tbodyData[params.index].msgTitle);
           }
         },
+        {title:'数据来源',key:'dataSources'},
+        {title:'类型',key:'msgType'},
         {title:'发起人',key:'originator'},
         {title:'部门',key:'department'},
         {title:'公司',key:'company'}
@@ -76,11 +87,13 @@ export default {
     getData(){
       this.$ajax({
         method:'get',
-        url:'/newsList',
+        url:'/msgData',
         params:{}
       }).then(res=>{
         console.log(res);
-        this.tbodyData=res.data.data;
+        this.tbodyData=res.data.data.msgList;
+        this.waitDoTypeList=res.data.data.msgType;
+        this.dataSourcesList=res.data.data.dataSources;
       })
     },
     changePage (value) {

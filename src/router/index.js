@@ -4,6 +4,8 @@ import Layout from '@/components/layout/layout'
 import Index from '@/components/index/index'
 import Cockpit from '@/components/cockpit/cockpit'
 import NewsCenter from '@/components/newsCenter/newsCenter'
+import MsgCenter from '@/components/msgCenter/msgCenter'
+import WaitDoCenter from '@/components/waitDoCenter/waitDoCenter'
 import Login from '@/components/login/login'
 
 Vue.use(Router)
@@ -33,6 +35,14 @@ export default new Router({
           {
             path:'newsCenter',
             component:NewsCenter
+          },
+          {
+            path:'msgCenter',
+            component:MsgCenter
+          },
+          {
+            path:'waitDoCenter',
+            component:WaitDoCenter
           },
         ]
       },

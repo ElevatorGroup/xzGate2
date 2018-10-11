@@ -63,4 +63,29 @@
   background-color: #F6F8FA;
   z-index: 999;
 }
+.ivu-table td.overEllipsis>div{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*滚动条样式 */
+::-webkit-scrollbar{
+  width:4px;
+  height:4px;
+}
+::-webkit-scrollbar-track{
+  background: #f6f6f6;
+  border-radius:2px;
+}
+::-webkit-scrollbar-thumb{
+  background: #aaa;
+  border-radius:2px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #747474;
+}
+::-webkit-scrollbar-corner{
+  background: #f6f6f6;
+}
 </style>
