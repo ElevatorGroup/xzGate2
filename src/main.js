@@ -4,15 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import vueResource from 'vue-resource'
-// import axios from 'axios'
+import axios from 'axios'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 
 Vue.config.productionTip = false
 Vue.use(iView)
 Vue.use(vueResource)
-// Vue.prototype.$ajax = axios
-
+Vue.prototype.$ajax = axios
+axios.defaults.baseURL = '/api'
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

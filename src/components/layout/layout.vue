@@ -20,6 +20,13 @@
 .pd20{
   padding:0 20px;
 }
+.ivu-select{
+  position:relative !important;
+}
+.ivu-select-dropdown{
+  top:-140px;
+  left: 0;
+}
 .header{
   height: 60px;
   width: 100%;
@@ -44,14 +51,14 @@
   overflow: auto;
 }
 .pageBox{
-  padding: 65px 0 15px 0;
+  padding: 50px 0 10px 0;
 }
 .breadnav{
   position: fixed;
   top: 60px;
   width: 100%;
-  height: 50px;
-  line-height: 50px;
+  height: 35px;
+  line-height: 35px;
   padding:0 20px;
   background-color: #F6F8FA;
   z-index: 999;
