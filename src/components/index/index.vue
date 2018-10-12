@@ -6,6 +6,7 @@
       <router-link to="/layout/newsCenter">新闻中心</router-link>
       <router-link to="/layout/msgCenter">消息中心</router-link>
       <router-link to="/layout/waitDoCenter">待办中心</router-link>
+      <router-link to="/layout/selfService">员工自助</router-link>
     </div>
   </div>
 </template>

@@ -53,7 +53,6 @@
 export default {
   data(){
     return {
-      fullHeight: document.documentElement.clientHeight-236,
       searchData:{msgTitle:"",originator:"",originatorTime:"",department:"",msgType:"",dataSources:"",company:""},
       msgTypeList:[],//消息类型数据
       dataSourcesList:[],//数据来源数据

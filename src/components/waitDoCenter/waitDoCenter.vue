@@ -53,7 +53,6 @@
 export default {
   data(){
     return {
-      fullHeight: document.documentElement.clientHeight-236,
       searchData:{waitDoTitle:"",originator:"",originatorTime:"",department:"",waitDoType:"",dataSources:"",company:""},
       waitDoTypeList:[],//消息类型数据
       dataSourcesList:[],//数据来源数据

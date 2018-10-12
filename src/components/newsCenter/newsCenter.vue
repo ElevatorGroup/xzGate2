@@ -46,7 +46,6 @@
 export default {
   data(){
     return {
-      fullHeight: document.documentElement.clientHeight-236,
       searchData:{newsTitle:"",originator:"",originatorTime:"",department:"",company:""},
       theadData:[ //表头
         {title:'发布时间',key:'originatorTime'},

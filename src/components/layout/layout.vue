@@ -20,6 +20,9 @@
 .pd20{
   padding:0 20px;
 }
+.ivu-table-border td, .ivu-table-border th{
+  text-align: center;
+}
 .ivu-select{
   position:relative !important;
 }
@@ -67,6 +70,31 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.tabCard .ivu-tabs-nav-container:focus .ivu-tabs-tab-focused{
+  border-color: #A93439 !important;
+}
+.tabCard .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab:hover{
+  color: #A93439;
+}
+.tabCard .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab{
+  border-radius: 0;
+  background: #fff;
+}
+.tabCard .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active{
+  border-top: 1px solid #A93439;
+  color: #A93439;
+}
+.tabCard .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active:before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #A93439;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*滚动条样式 */

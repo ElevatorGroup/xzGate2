@@ -15,6 +15,7 @@ const app = express()
 var appData = require('../api/data.json')   //加载本地数据文件
 var newsList = appData.newsList             //获取对应的本地数据
 var msgData = appData.msgData             //获取对应的本地数据
+var salaryList = appData.salaryList             //获取对应的本地数据
 var apiRoutes = express.Router()
 app.use('/api', apiRoutes)
 //*************************************************
@@ -63,6 +64,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         res.json({
           errno: 0,
           data: msgData
+        })
+      }),
+      app.get('/api/salaryList',(req,res)=>{
+        res.json({
+          errno: 0,
+          data: salaryList
         })
       })
     }

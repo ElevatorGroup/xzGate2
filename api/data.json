@@ -229,10 +229,10 @@
       "position":"信息管理岗",
       "salaryTime":"2018-09-01 至 2018-10-01",
       "salary":"5000.00",
-      "providentFund":"800.00",//公积金
-      "taxableIncome":"700.00",//应税所得
-      "incomeTax":"21.00",//个人所得税
-      "actualSalary":"4179.00"//实发工资
+      "providentFund":"800.00",
+      "taxableIncome":"700.00",
+      "incomeTax":"21.00",
+      "actualSalary":"4179.00"
     },
     {
       "staffNum":"302",
@@ -241,10 +241,10 @@
       "position":"秘书长",
       "salaryTime":"2018-09-01 至 2018-10-01",
       "salary":"8000.00",
-      "providentFund":"1000.00",//公积金
-      "taxableIncome":"800.00",//应税所得
-      "incomeTax":"45.00",//个人所得税
-      "actualSalary":"7255.00"//实发工资
+      "providentFund":"1000.00",
+      "taxableIncome":"800.00",
+      "incomeTax":"45.00",
+      "actualSalary":"7255.00"
     },
     {
       "staffNum":"303",
@@ -253,10 +253,10 @@
       "position":"财务总监",
       "salaryTime":"2018-09-01 至 2018-10-01",
       "salary":"10000.00",
-      "providentFund":"1200.00",//公积金
-      "taxableIncome":"1000.00",//应税所得
-      "incomeTax":"100.00",//个人所得税
-      "actualSalary":"8100.00"//实发工资
+      "providentFund":"1200.00",
+      "taxableIncome":"1000.00",
+      "incomeTax":"100.00",
+      "actualSalary":"8100.00"
     },
     {
       "staffNum":"304",
@@ -265,10 +265,10 @@
       "position":"前端工程师",
       "salaryTime":"2018-09-01 至 2018-10-01",
       "salary":"5000.00",
-      "providentFund":"800.00",//公积金
-      "taxableIncome":"800.00",//应税所得
-      "incomeTax":"21.00",//个人所得税
-      "actualSalary":"4179.00"//实发工资
+      "providentFund":"800.00",
+      "taxableIncome":"800.00",
+      "incomeTax":"21.00",
+      "actualSalary":"4179.00"
     },
     {
       "staffNum":"305",
@@ -277,10 +277,10 @@
       "position":"UI设计师",
       "salaryTime":"2018-09-01 至 2018-10-01",
       "salary":"8000.00",
-      "providentFund":"1000.00",//公积金
-      "taxableIncome":"800.00",//应税所得
-      "incomeTax":"45.00",//个人所得税
-      "actualSalary":"7255.00"//实发工资
+      "providentFund":"1000.00",
+      "taxableIncome":"800.00",
+      "incomeTax":"45.00",
+      "actualSalary":"7255.00"
     },
     {
       "staffNum":"306",
@@ -289,10 +289,10 @@
       "position":"行政总监",
       "salaryTime":"2018-09-01 至 2018-10-01",
       "salary":"10000.00",
-      "providentFund":"1200.00",//公积金
-      "taxableIncome":"1000.00",//应税所得
-      "incomeTax":"100.00",//个人所得税
-      "actualSalary":"8100.00"//实发工资
+      "providentFund":"1200.00",
+      "taxableIncome":"1000.00",
+      "incomeTax":"100.00",
+      "actualSalary":"8100.00"
     },
     {
       "staffNum":"307",
@@ -301,10 +301,10 @@
       "position":"会计",
       "salaryTime":"2018-09-01 至 2018-10-01",
       "salary":"5000.00",
-      "providentFund":"800.00",//公积金
-      "taxableIncome":"700.00",//应税所得
-      "incomeTax":"21.00",//个人所得税
-      "actualSalary":"4179.00"//实发工资
+      "providentFund":"800.00",
+      "taxableIncome":"700.00",
+      "incomeTax":"21.00",
+      "actualSalary":"4179.00"
     },
     {
       "staffNum":"308",
@@ -313,10 +313,10 @@
       "position":"网络维护工程师",
       "salaryTime":"2018-09-01 至 2018-10-01",
       "salary":"8000.00",
-      "providentFund":"1000.00",//公积金
-      "taxableIncome":"800.00",//应税所得
-      "incomeTax":"45.00",//个人所得税
-      "actualSalary":"7255.00"//实发工资
+      "providentFund":"1000.00",
+      "taxableIncome":"800.00",
+      "incomeTax":"45.00",
+      "actualSalary":"7255.00"
     },
     {
       "staffNum":"309",
@@ -325,10 +325,10 @@
       "position":"总经理",
       "salaryTime":"2018-09-01 至 2018-10-01",
       "salary":"10000.00",
-      "providentFund":"1200.00",//公积金
-      "taxableIncome":"1000.00",//应税所得
-      "incomeTax":"100.00",//个人所得税
-      "actualSalary":"8100.00"//实发工资
+      "providentFund":"1200.00",
+      "taxableIncome":"1000.00",
+      "incomeTax":"100.00",
+      "actualSalary":"8100.00"
     },
     {
       "staffNum":"310",
@@ -337,10 +337,10 @@
       "position":"Java工程师",
       "salaryTime":"2018-09-01 至 2018-10-01",
       "salary":"7000.00",
-      "providentFund":"850.00",//公积金
-      "taxableIncome":"750.00",//应税所得
-      "incomeTax":"80.00",//个人所得税
-      "actualSalary":"6000.00"//实发工资
+      "providentFund":"850.00",
+      "taxableIncome":"750.00",
+      "incomeTax":"80.00",
+      "actualSalary":"6000.00"
     }
   ]
 }

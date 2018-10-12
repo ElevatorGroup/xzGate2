@@ -6,6 +6,7 @@ import Cockpit from '@/components/cockpit/cockpit'
 import NewsCenter from '@/components/newsCenter/newsCenter'
 import MsgCenter from '@/components/msgCenter/msgCenter'
 import WaitDoCenter from '@/components/waitDoCenter/waitDoCenter'
+import SelfService from '@/components/selfService/selfService'
 import Login from '@/components/login/login'
 
 Vue.use(Router)
@@ -43,6 +44,10 @@ export default new Router({
           {
             path:'waitDoCenter',
             component:WaitDoCenter
+          },
+          {
+            path:'selfService',
+            component:SelfService
           },
         ]
       },
