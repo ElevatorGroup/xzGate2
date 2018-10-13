@@ -7,6 +7,7 @@ import NewsCenter from '@/components/newsCenter/newsCenter'
 import MsgCenter from '@/components/msgCenter/msgCenter'
 import WaitDoCenter from '@/components/waitDoCenter/waitDoCenter'
 import SelfService from '@/components/selfService/selfService'
+import Theme from '@/components/theme/theme'
 import Login from '@/components/login/login'
 
 Vue.use(Router)
@@ -49,6 +50,10 @@ export default new Router({
             path:'selfService',
             component:SelfService
           },
+          {
+            path:'theme',
+            component:Theme
+          }
         ]
       },
       {

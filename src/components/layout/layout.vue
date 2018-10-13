@@ -1,7 +1,29 @@
 <template>
   <div class="layout">
-      <header class="header">头部</header>
-      <section class="container"><router-view/></section>
+      <header class="header">
+        <div class="header-logo"></div>
+        <div class="header-right">
+          <a href="#">
+            <Icon type="md-settings"  size="24" color="#c5c5c5"/>
+          </a>
+          <a href="#">
+            <Icon custom="iconfont icon-emailFilled" size="24" color="#c5c5c5"/>
+          </a>
+          <a href="#">
+            <Icon custom="iconfont icon-gengduo1" size="24" color="#c5c5c5"/>
+          </a>
+
+          <span>
+                  <i class="header-right-logo"> <img src="../../assets/images/logo1.png" alt=""/></i> 14287895@qq.com
+              </span>
+          <div class="serchBar">
+            <input type="text" placeholder="输入搜索的内容"/>
+            <a href="#" class="serchBtn"><Icon type="ios-search" size="26"/></a>
+          </div>
+        </div>
+      </header>
+
+      <section><router-view/></section>
       <footer class="footer">
           <p>Copyright &copy; www.Xzcsgdjt.com, All Rights Reserved.</p>
           <p>Email : xzcsgdjt@qq.com QQ : 5698401</p>
@@ -17,85 +39,17 @@
 </script>
 
 <style>
-.pd20{
-  padding:0 20px;
-}
 .ivu-table-border td, .ivu-table-border th{
   text-align: center;
 }
-.ivu-select{
-  position:relative !important;
-}
-.ivu-select-dropdown{
-  top:-140px;
-  left: 0;
-}
-.header{
-  height: 60px;
-  width: 100%;
-  line-height: 60px;
-  background-color: aqua;
-  text-align: center;
-}
-.footer{
-  height: 50px;
-  width: 100%;
-  background-color: #F6F8FA;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  padding: 10px 0;
-}
-.container{
-  width: 100%;
-  position: absolute;
-  top: 60px;
-  bottom: 50px;
-  overflow: auto;
+.pt20{
+  padding-top: 20px;
 }
 .pageBox{
-  padding: 50px 0 10px 0;
-}
-.breadnav{
-  position: fixed;
-  top: 60px;
-  width: 100%;
-  height: 35px;
-  line-height: 35px;
-  padding:0 20px;
-  background-color: #F6F8FA;
-  z-index: 999;
-}
-.ivu-table td.overEllipsis>div{
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  padding-top: 60px;
 }
 
-.tabCard .ivu-tabs-nav-container:focus .ivu-tabs-tab-focused{
-  border-color: #A93439 !important;
-}
-.tabCard .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab:hover{
-  color: #A93439;
-}
-.tabCard .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab{
-  border-radius: 0;
-  background: #fff;
-}
-.tabCard .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active{
-  border-top: 1px solid #A93439;
-  color: #A93439;
-}
-.tabCard .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active:before{
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #A93439;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 
 /*滚动条样式 */
 ::-webkit-scrollbar{

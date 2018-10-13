@@ -1,12 +1,12 @@
 <template>
   <div class="pageBox">
-    <div class="breadnav">
+    <div class="breadCrub">
       <Breadcrumb>
         <BreadcrumbItem to="/">首页</BreadcrumbItem>
         <BreadcrumbItem>消息中心</BreadcrumbItem>
       </Breadcrumb>
     </div>
-    <div class="pd20">
+    <div class="pageareMain">
       <div class="searchBox">
         <Row :gutter="16">
           <Col span="16">消息标题：<Input v-model="searchData.msgTitle" placeholder="XXX" clearable style="width: 80%;"/></Col>

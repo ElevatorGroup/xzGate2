@@ -7,6 +7,8 @@ import vueResource from 'vue-resource'
 import axios from 'axios'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
+import './assets/css/common.css'
+import './assets/css/font/iconfont.css'
 
 Vue.config.productionTip = false
 Vue.use(iView)

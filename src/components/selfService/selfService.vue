@@ -1,15 +1,15 @@
 <template>
   <div class="pageBox">
-    <div class="breadnav">
+    <div class="breadCrub">
       <Breadcrumb>
         <BreadcrumbItem to="/">首页</BreadcrumbItem>
         <BreadcrumbItem>员工自助</BreadcrumbItem>
         <BreadcrumbItem>个人薪资</BreadcrumbItem>
       </Breadcrumb>
     </div>
-    <div class="pd20 tabCard">
+    <div class="pageareMain tabCard">
       <Tabs type="card">
-        <TabPane label="个人薪资">
+        <TabPane label="个人薪资" class="pt20">
           <div class="searchBox">
             <Row :gutter="16">
               <Col span="8">所属组织：<Input v-model="searchData.group" placeholder="XXX" clearable style="width: 60%;"/></Col>
